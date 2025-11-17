@@ -31,16 +31,19 @@ Engagment Days = DATEDIFF('Clients - Banking'[Joined Bank],TODAY(), DAY )
 # 1] Total Clients : 
 Total Clients KPI represents total number of clients in banking.
 Total Clients = DISTINCTCOUNT('Clients - Banking'[Client ID] )
+
 <img width="370" height="155" alt="total clients" src="https://github.com/user-attachments/assets/b5ee3a92-c3b4-457d-a18d-769be65eadc9" />
 
 # 2] Total Loan :
 Total Loan gives you information about the bank loan + Business lending + credit cards balance of particular  investor , gender.
 Total Loan = [Bank Loan] + [Business Lending] + [Credit Cards Balance]
+
 <img width="345" height="152" alt="total loans" src="https://github.com/user-attachments/assets/9e7cf6af-d421-4d07-a8d1-0aa394e9bbf7" />
 
 # 3] Bank Loan :
 Bank Loan gives you information what is the loan amount of loan to be repaid by the client to bank.
 Bank Loan = SUM('Clients - Banking'[Bank Loans] )
+
 <img width="290" height="123" alt="bank loan" src="https://github.com/user-attachments/assets/dda821c6-354c-4b8d-b8cf-6e7bbe2757ee" />
 
 # 4] Business Lending :
